@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import './App.css';
+import "./styles/BaseStyle.css"
+import employees from './models/employees';
+import HomePage from './components/employee_directory/HomePage';
+import EmployeePage from './components/employee_page/EmployeePage';
+import React, {useContext, useState} from 'react';
+
+export const EmployeesContext = React.createContext(employees);
 
 function App() {
+  const [currentEmployee, setCurrentEmployee] = useState(employees[1]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <EmployeesContext.Provider value={employees}>
+        <HomePage setEmployee={setCurrentEmployee}/>
+        <EmployeePage currentEmployee={currentEmployee}/>
+      </EmployeesContext.Provider>
     </div>
   );
 }
