@@ -9,9 +9,16 @@
 
 .EmployeeCard *
 {
-  margin: 1px 0;
   border-radius: 0;
   border-width: 0;
+}
+
+.EmployeeCard > *
+{
+  margin: 1px 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #FFFFFF;
 }
 
 .EmployeeCard > *:first-child
@@ -28,20 +35,6 @@
   border-radius: inherit;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-}
-
-
-
-.EmployeeCard *
-{
-  background-color: #FFFFFF;
-}
-
-.EmployeeCard > *
-{
-  display: flex;
-  flex-direction: row;
-  /* border-width: 0; */
 }
 
 .EmployeeCard > .EmployeePageProfile * 
@@ -62,6 +55,7 @@
 
 .EmployeeCard > .EmployeePageButton
 {
+  flex: 1;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -77,6 +71,8 @@
   /* right: 0; */
   /* top: 0; */
   flex: 1;
-  height: 100%;
-  object-fit: contain;
+  height: 24px;
+  object-fit: scale-down;
+  object-position: right;
+  opacity: 20%;
 }

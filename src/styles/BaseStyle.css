@@ -33,6 +33,7 @@
   text-align: center;
   height: fit-content;
   white-space: nowrap;
+  /* border-width: 0.5px; */
 }
 
 .Header > .textContent
@@ -48,6 +49,13 @@
   left: 0;
   top: 0;
   border-width: 0;
+  margin: 0;
+  
+  height: 100%;
+  
+  object-fit: contain;
+  transform-origin: center;
+  scale: 1.5;
 }
 
 .SearchBar

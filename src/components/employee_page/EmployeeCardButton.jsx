@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+
+// https://stackoverflow.com/a/39999421
+import icon from "../../assets/arrows/right-arrow.png";
 
 function EmployeeCardButton({textContent, info}) {
   return (
@@ -7,7 +10,7 @@ function EmployeeCardButton({textContent, info}) {
         <h4>{textContent}</h4>
         <h5>{info}</h5>
       </span>
-      <img className="icon leftArrow" src="#" alt="#" />
+      <img className="icon leftArrow" src={icon} alt="#" />
     </div>
   )
 }
