@@ -45,11 +45,20 @@
 .EmployeeCard > .EmployeePageProfile > span
 {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .EmployeeCard > .EmployeePageProfile > span > *
 {
   padding: 0;
+}
+
+.EmployeeCard .portrait
+{
+  width: 96px !important;
+  height: 96px !important;
 }
 
 .EmployeeCard > .EmployeePageButton *

@@ -3,12 +3,13 @@ import Header from '../Header'
 import EmployeeCardProfile from './EmployeeCardProfile'
 import EmployeeCardButton from './EmployeeCardButton'
 
-import icon from "../../assets/arrows/back-chevron.png"
+// import icon from "/assets/arrows/back-chevron.png";
 
 function EmployeePage({ currentEmployee }) {
   return (
     <div className='EmployeePage'>
-     <Header icon={icon} textContent="Employee" />
+      {/* Used resource to learn how to get images: https://stackoverflow.com/a/48037875 */}
+     <Header icon={"/assets/arrows/back-chevron.png"} textContent="Employee" />
      <div className='EmployeeCard'>
       <EmployeeCardProfile employee={currentEmployee} />
       <EmployeeCardButton textContent="Call Office" info={currentEmployee.officeNumber}/>

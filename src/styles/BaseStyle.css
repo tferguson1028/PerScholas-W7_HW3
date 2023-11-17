@@ -1,3 +1,13 @@
+.App {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  min-width: 60%;
+  max-width: 100%;
+  margin: 0 20%;
+}
+
 .App *
 {
   /* background-color: white; */
@@ -10,12 +20,6 @@
   padding: 8px;
   
   font-family: "Roboto", Arial, sans-serif;
-}
-
-.App {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 }
 
 .App > * {
@@ -70,6 +74,16 @@
   padding: 6pt;
   box-shadow: inset 0 0px 3px #CCCCCC;
   border: inherit;
+}
+
+.portrait
+{
+  padding: 0 !important;
+  border-radius: 100% !important;
+  width: 48px !important;
+  height: 48px !important;
+  object-fit: contain !important;
+  object-position: bottom !important;
 }
 
 
