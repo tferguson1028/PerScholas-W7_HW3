@@ -5,7 +5,7 @@ import EmployeeCardButton from './EmployeeCardButton'
 
 function EmployeePage({ currentEmployee }) {
   return (
-    <div>
+    <div className='EmployeePage'>
      <Header icon="<" textContent="Employee" />
      <div className='EmployeeCard'>
       <EmployeeCardProfile employee={currentEmployee} />

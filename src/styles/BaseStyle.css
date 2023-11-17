@@ -1,12 +1,56 @@
-body *
+.App *
 {
-  background-color: white;
+  /* background-color: white; */
   position: relative;
   box-sizing: border-box;
+  /* display: inline-block; */
   border: 2px solid #DDDDDD;
-  border-radius: 4px;
+  border-radius: 8px;
   margin: 2px;
-  padding: 4px;
+  padding: 8px;
+  
+  font-family: "Roboto", Arial, sans-serif;
 }
 
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
 
+.App > * {
+  flex: 1;
+}
+
+.portrait
+{
+  border-radius: 100%;
+  background-color: red;
+}
+
+.Header
+{
+  text-align: center;
+  height: fit-content;
+  white-space: nowrap;
+}
+
+.Header > .textContent
+{
+  font-weight: 900;
+  font-size: 13pt;
+  border-width: 0;
+}
+
+.Header > .icon
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-width: 0;
+}
+
+.SearchBar
+{
+
+}

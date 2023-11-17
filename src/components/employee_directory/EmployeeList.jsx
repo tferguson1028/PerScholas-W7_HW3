@@ -6,7 +6,7 @@ function EmployeeList() {
   const employees = useContext(EmployeesContext);
   
   return (
-    <div>
+    <div className='EmployeeList'>
       { employees.map((employee) => <EmployeeListItem employee={employee} />) }
     </div>
   )

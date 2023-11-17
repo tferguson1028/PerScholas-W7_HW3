@@ -1,0 +1,82 @@
+.EmployeeCard
+{
+  margin-top: 24px;
+  padding: 0;
+  /* padding: 1px 1px; */
+  /* border-width: 0; */
+  background-color: #DDDDDD;
+}
+
+.EmployeeCard *
+{
+  margin: 1px 0;
+  border-radius: 0;
+  border-width: 0;
+}
+
+.EmployeeCard > *:first-child
+{
+  margin-top: 0;
+  border-radius: inherit;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.EmployeeCard > *:last-child
+{
+  margin-bottom: 0;
+  border-radius: inherit;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
+
+.EmployeeCard *
+{
+  background-color: #FFFFFF;
+}
+
+.EmployeeCard > *
+{
+  display: flex;
+  flex-direction: row;
+  /* border-width: 0; */
+}
+
+.EmployeeCard > .EmployeePageProfile * 
+{
+  border-width: 0;
+}
+
+.EmployeeCard > .EmployeePageProfile > span
+{
+  flex: 1;
+}
+
+.EmployeeCard > .EmployeePageButton *
+{
+  padding: 0;
+  margin: 4px;
+}
+
+.EmployeeCard > .EmployeePageButton
+{
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.EmployeeCard > .EmployeePageButton > span
+{
+  flex: 1;
+}
+
+.EmployeeCard > .EmployeePageButton > img
+{
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: 0; */
+  flex: 1;
+  height: 100%;
+  object-fit: contain;
+}
