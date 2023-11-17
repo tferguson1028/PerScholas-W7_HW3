@@ -12,7 +12,6 @@ let avatars = [
 
 let officeAreaCode = randNumString(3);
 let officePrefix = randNumString(3);
-console.log(officeAreaCode);
 
 function randNumString(length)
 {
@@ -42,14 +41,12 @@ function createEmployee(name, title, pictureSource, bgColor)
 }
 
 const employees = [
-  createEmployee("James King", "President and CEO", avatars[0], "#d6415f"),
-  createEmployee("Julie Taylor", "VP of Marketing", avatars[0], "#d98240"),
-  createEmployee("Eugene Lee", "CFO", avatars[0], "#61c0b3"),
-  createEmployee("John Williams", "VP of Engineering", avatars[0], "#1d9e41"),
-  createEmployee("Ray Moore", "VP of Sales", avatars[0], "#dc9b41"),
-  createEmployee("Paul Jones", "QA Manager", avatars[0], "#9c275e"),
+  createEmployee("James King", "President and CEO", avatars[5], "#d6415f"),
+  createEmployee("Julie Taylor", "VP of Marketing", avatars[7], "#d98240"),
+  createEmployee("Eugene Lee", "CFO", avatars[2], "#61c0b3"),
+  createEmployee("John Williams", "VP of Engineering", avatars[5], "#1d9e41"),
+  createEmployee("Ray Moore", "VP of Sales", avatars[4], "#dc9b41"),
+  createEmployee("Paul Jones", "QA Manager", avatars[3], "#9c275e"),
 ];
-
-console.log(employees);
 
 module.exports = employees;
