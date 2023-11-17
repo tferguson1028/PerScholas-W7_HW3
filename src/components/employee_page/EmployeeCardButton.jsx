@@ -8,7 +8,7 @@ function EmployeeCardButton({textContent, info}) {
     <div className='EmployeePageButton'>
       <span>
         <h4>{textContent}</h4>
-        <h5>{info}</h5>
+        <p>{info}</p>
       </span>
       <img className="icon leftArrow" src={icon} alt="#" />
     </div>

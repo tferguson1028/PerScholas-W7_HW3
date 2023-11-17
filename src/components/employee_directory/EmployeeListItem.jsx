@@ -6,7 +6,7 @@ function EmployeeListItem({employee}) {
       <img className="portrait" src={employee.profile} alt="#" />
       <span>
         <h4>{employee.name}</h4>
-        <h5>{employee.title}</h5>
+        <p>{employee.title}</p>
       </span>
     </div>
   )

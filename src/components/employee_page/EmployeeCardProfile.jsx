@@ -5,8 +5,8 @@ function EmployeeCardProfile({ employee }) {
     <div className='EmployeePageProfile'>
       <img className="portrait" src={employee.profile} alt="#" />
       <span>
-        <h3>{employee.name}</h3>
-        <h4>{employee.title}</h4>
+        <h2>{employee.name}</h2>
+        <p>{employee.title}</p>
       </span>
     </div>
   )
