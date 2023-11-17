@@ -60,8 +60,18 @@
 
 .SearchBar
 {
-
+  display: flex;
+  border-width: 0;
 }
+
+.SearchBar > input
+{
+  flex: 1;
+  padding: 6pt;
+  box-shadow: inset 0 0px 3px #CCCCCC;
+  border: inherit;
+}
+
 
 h1, h2, h3, h4, h5, h6, p
 {

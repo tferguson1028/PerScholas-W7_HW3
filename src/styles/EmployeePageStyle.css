@@ -47,6 +47,11 @@
   flex: 1;
 }
 
+.EmployeeCard > .EmployeePageProfile > span > *
+{
+  padding: 0;
+}
+
 .EmployeeCard > .EmployeePageButton *
 {
   padding: 0;

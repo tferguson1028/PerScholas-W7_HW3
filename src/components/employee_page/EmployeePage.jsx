@@ -3,7 +3,7 @@ import Header from '../Header'
 import EmployeeCardProfile from './EmployeeCardProfile'
 import EmployeeCardButton from './EmployeeCardButton'
 
-import icon from "../../assets/arrows/left-arrow.png"
+import icon from "../../assets/arrows/back-chevron.png"
 
 function EmployeePage({ currentEmployee }) {
   return (
