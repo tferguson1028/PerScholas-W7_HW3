@@ -11,7 +11,7 @@ function EmployeeCardButton({textContent, info}) {
         <p>{info}</p>
       </span>
       {/* Used resource to learn how to get images: https://stackoverflow.com/a/48037875 */}
-      <img className="icon leftArrow" src={"/assets/arrows/right-arrow.png"} alt="#" />
+      <img className="icon leftArrow" src={"/assets/arrows/right-arrow.png"} alt="" />
     </div>
   )
 }

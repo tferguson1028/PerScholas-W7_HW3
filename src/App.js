@@ -6,7 +6,6 @@ import HomePage from './components/employee_directory/HomePage';
 import EmployeePage from './components/employee_page/EmployeePage';
 
 function App() {
-  
   return (
     <div className="App">
       <HomePage />
