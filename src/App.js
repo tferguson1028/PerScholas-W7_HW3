@@ -2,23 +2,15 @@
 import "./styles/BaseStyle.css"
 import "./styles/HomePageStyle.css"
 import "./styles/EmployeePageStyle.css"
-import employees from './models/employees';
 import HomePage from './components/employee_directory/HomePage';
 import EmployeePage from './components/employee_page/EmployeePage';
-import React, { createContext, useContext, useState} from 'react';
-import { EmployeesContext } from "./context/EmployeesContext";
-
-// export const EmployeesContext = createContext(employees);
 
 function App() {
-  const [currentEmployee, setCurrentEmployee] = useState(employees[1]);
-
+  
   return (
     <div className="App">
-      <EmployeesContext.Provider value={employees}>
-        <HomePage setEmployee={setCurrentEmployee}/>
-        <EmployeePage currentEmployee={currentEmployee}/>
-      </EmployeesContext.Provider>
+      <HomePage />
+      <EmployeePage />
     </div>
   );
 }

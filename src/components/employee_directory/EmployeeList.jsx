@@ -3,11 +3,11 @@ import EmployeeListItem from './EmployeeListItem'
 import { EmployeesContext } from '../../context/EmployeesContext';
 
 function EmployeeList() {
-  const employees = useContext(EmployeesContext);
+  const { employeeList } = useContext(EmployeesContext);
   
   return (
     <div className='EmployeeList'>
-      { employees.map((employee) => <EmployeeListItem employee={employee} />) }
+      { employeeList.map((employee, index) => <EmployeeListItem key={index} employee={employee} />) }
     </div>
   )
 }

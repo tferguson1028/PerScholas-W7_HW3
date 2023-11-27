@@ -1,11 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Header from '../Header'
 import EmployeeCardProfile from './EmployeeCardProfile'
 import EmployeeCardButton from './EmployeeCardButton'
+import {EmployeesContext} from '../../context/EmployeesContext'
 
 // import icon from "/assets/arrows/back-chevron.png";
 
-function EmployeePage({ currentEmployee }) {
+function EmployeePage() {
+  const { currentEmployee } = useContext(EmployeesContext);
+
   return (
     <div className='EmployeePage'>
       {/* Used resource to learn how to get images: https://stackoverflow.com/a/48037875 */}
