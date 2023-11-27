@@ -5,9 +5,10 @@ import "./styles/EmployeePageStyle.css"
 import employees from './models/employees';
 import HomePage from './components/employee_directory/HomePage';
 import EmployeePage from './components/employee_page/EmployeePage';
-import React, {useContext, useState} from 'react';
+import React, { createContext, useContext, useState} from 'react';
+import { EmployeesContext } from "./context/EmployeesContext";
 
-export const EmployeesContext = React.createContext(employees);
+// export const EmployeesContext = createContext(employees);
 
 function App() {
   const [currentEmployee, setCurrentEmployee] = useState(employees[1]);

@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import EmployeeListItem from './EmployeeListItem'
-import { EmployeesContext } from "../../App"
+import { EmployeesContext } from '../../context/EmployeesContext';
 
 function EmployeeList() {
   const employees = useContext(EmployeesContext);
