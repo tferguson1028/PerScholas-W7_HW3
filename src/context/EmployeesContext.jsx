@@ -13,7 +13,7 @@ export const EmployeesContext = createContext();
 function EmployeesContextProvider(props)
 {
   const [employeeList, setEmployeeList] = useState(employees);
-  const [currentEmployee, setCurrentEmployee] = useState(employeeList[0]);
+  const [currentEmployee, setCurrentEmployee] = useState(employeeList[1]);
   console.log(currentEmployee);
 
   return (
